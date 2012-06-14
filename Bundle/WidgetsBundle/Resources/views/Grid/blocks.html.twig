@@ -13,8 +13,8 @@
 {% endspaceless %}
 {% endmacro %}
 {# -------------------------------------------------- grid_widget -------------------------------------------------- #}
-{% block grid %}
-    <div id="snappminds_utils_widget_grid_{{ grid.vars.id }}">
+{% block grid %} 
+    <div id="snappminds_utils_widget_grid_{{ grid.vars.id }}" class="{{ grid.vars.className }}">
         <div>
             <table>
                 <thead>
@@ -82,8 +82,8 @@
 {# -------------------------------------------------- grid_data -------------------------------------------------- #}
 {% block data %}
     {% for row in grid.vars.rows %}
-        <tr>
-            {% for column in grid.vars.columns %}			
+        <tr class="snappminds_utils_widget_grid_row_{{ cycle( ['even', 'odd'], loop.index ) }}">
+            {% for column in grid.vars.columns %}			                
                 <td>{{ grid_cell(column, row[column.vars.name], grid) }}</td>
             {% endfor %}
         </tr>

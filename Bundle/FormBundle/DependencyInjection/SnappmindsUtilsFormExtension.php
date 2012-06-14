@@ -28,7 +28,8 @@ class SnappmindsUtilsFormExtension extends Extension
         $resources = array_merge($resources, array(
             'SnappmindsUtilsFormBundle:Form:choice.html.twig',
             'SnappmindsUtilsFormBundle:Form:predicttext.html.twig',
-            'SnappmindsUtilsFormBundle:Form:entitycontainer.html.twig'
+            'SnappmindsUtilsFormBundle:Form:entitycontainer.html.twig',
+            'SnappmindsUtilsFormBundle:Form:date.html.twig'
         ));     
                 
         $container->setParameter('twig.form.resources', $resources);

@@ -1,6 +1,14 @@
 {% javascripts '@SnappmindsUtilsFormBundle/Resources/public/js/Type/Choice/Choice.js' %}
-	<script src="{{ asset_url }}" ></script>
+    <script src="{{ asset_url }}" ></script>
 {% endjavascripts %}
 {% javascripts '@SnappmindsUtilsFormBundle/Resources/public/js/Type/PredictText/PredictText.js' %}
-	<script src="{{ asset_url }}" ></script>
+    <script src="{{ asset_url }}" ></script>
 {% endjavascripts %}
+{% javascripts %}
+    <script>
+        $(function() {
+            $( ".snappminds_utils_form_widget_date" ).datepicker();
+        });            
+    </script>
+{% endjavascripts %}        
+        
